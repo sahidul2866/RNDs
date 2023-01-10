@@ -1,0 +1,15 @@
+﻿/* Over writes for some bootstrap classes*/
+.ftButton { 
+    border: #6489ab solid 1px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: url(../images/btn-bg.jpg) repeat-x;
+    background-color:#edeee8;
+    margin: 0px 5px 0;
+    padding: 4px 8px;
+    font-size: 10pt;
+    font-weight:bold;
+    font: normal normal bold small sans-serif;
+    vertical-align:middle;    
+}

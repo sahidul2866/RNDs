@@ -1,0 +1,1335 @@
+﻿/*Detail overrides of Bootstrap*/
+#FormTable td 
+{
+    border:1px solid white;
+    padding:4px; 
+
+}
+/*Over ride right margin*/
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 18px;
+  margin-right: -20px;
+  margin-left: -10px;
+  margin-bottom: 25px;
+}
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
+}
+.row.small-gutter {
+    margin-left: 7px;
+    margin-right:7px;
+}
+
+.row.small-gutter [class*='col-']:not(:first-child),
+.row.small-gutter [class*='col-']:not(:last-child) {
+    padding-right: 1px;
+    padding-left: 1px;
+}
+/* make sidebar nav vertical */ 
+@media (max-width: 767px) {
+    .big-header {
+        display:none;
+	    }
+    .form-labelinput {
+        color: DarkBlue;
+        font-weight: bold;
+        }
+    .top-menu {
+        display: none;
+    }
+
+    .cart-divider hr {
+        display: none;
+    }
+    .save-divider hr {
+        display: none;
+    }
+    .cart-total-label span {
+        display:none;
+    }
+    #Cart_Footer hr {
+        display:none;
+    }
+    #Save_Footer hr {
+        display:none;
+    }
+}
+
+@media (min-width: 768px) 
+{
+    .cart-divider td:first-of-type {
+        display: none;
+    }
+    .save-divider td:first-of-type {
+        display: none;
+    }
+
+  .little-header {
+      display:none;
+  }
+
+    .subDivisionName {
+        position:relative;left:40px;width:90%;   
+    }
+
+.form-labelinput {
+	color: DarkBlue;
+	font-weight: bold;
+    position:relative;
+    top:10px;
+  }
+}
+
+.form-controlMyServices {
+  display: block;
+  width: 100%;
+  /* height: 34px; */
+    height: auto;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+ 
+/* .form-control::-webkit-input-placeholder { color: red; }
+.form-control:-moz-placeholder { color: red; }
+.form-control::-moz-placeholder { color: red; }
+.form-control:-ms-input-placeholder { color: red; } */
+.form-horizontal .form-control {
+	margin-bottom: -3px;
+	vertical-align: middle;
+	/* font-size:xx-large; */
+}
+.hidefield {
+    font-size: .00005em;
+    color: white;
+}
+.form-inputcc {
+    font-size: .95em;
+    font-weight:bold;
+}
+.form-textboxinput {
+	color: DarkBlue;
+	font-weight: bold;
+}
+.form-textboxinput_insp {
+	color: DarkBlue;
+    font-size: .95em;
+}
+.form-lblcontrol {
+    color:darkblue;
+    background-color: #f7f8ff;
+}
+.form-note {
+	color: darkgrey;
+    font-size: .85em;
+}
+.form-textboxinputmypermits {
+	color: red;
+	font-weight: bold;
+}
+.form-textboxinputddl {
+	color: grey;
+	font-weight: bold;
+	}
+.form-textboxinputddlmyprofile {
+	color: darkblue;
+	font-weight: bold;
+	}
+.form-horizontal .control-label {
+	font-size: .87em;
+	vertical-align: middle;
+	white-space: nowrap;
+	margin-top: 5px;
+}
+.form-horizontal .row {
+	font-size:small;
+}
+.form-horizontal .form-group-sm {
+	padding-top:7px;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: right;
+  min-width: 160px;
+  padding: 10px 0;
+  margin: 5px 105px;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 3px solid #ccc;
+  border: 3px solid rgba(0, 0, 0, .15);
+  border-color: #d9deff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+/*so no bullets show up on MyServices menu*/
+ul {
+    list-style: none;
+    padding:0;
+    margin:0px;
+}
+
+.dropdown-menu > li > a {
+  display: inline;
+  padding: 3px 10px 3px 10px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: blue;
+  white-space: nowrap;
+}
+
+.dropdown-escrow-cc-payments 
+{
+    /* REM-08/07/2018: FastTrack replenish escrow with cc payments */
+    left: -53%;
+    
+    /* REM-09/05/2018: Making escrow submenu more notorious */
+    box-shadow: 0.2em 0.2em 2.0em black;    
+}
+
+.navbar-collapse {
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow-x: visible;
+  border-top: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+}
+.navbar-collapse.in {
+  overflow-y: visible;
+}
+.navbar-brand_main {
+  float: left;
+  height: 77px;
+  padding: 5px 5px;
+  /* font-size: 18px; */
+  /* line-height: 200px; */
+}
+.navbar-brand {
+  float: left;
+  height: 18px;
+  padding: 9px 15px 2px 5px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: bold;
+  margin-right: -10px
+}
+.navMyServices > li > a:hover,
+.navMyServices > li > a:focus {
+  text-decoration: none;
+  /* background-color: navy;  doesn't take because I changed the background color */
+  padding-bottom: 7px;
+  padding-top: 9px;
+  margin-top: 5px;
+  color: blue;
+  font-weight: bold;
+}
+.navMyServices{
+  text-decoration: none;
+  padding-bottom: 5px;
+  margin-top: 7px;
+}
+.navbar {
+  position: relative;
+  min-height: 30px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  margin-right: 3px;
+}
+
+
+/* Links used in the Navigation Menu */
+.navbar-default .navbar-nav > li > a {
+  color: blue;
+  	cursor: pointer;
+}
+.navbar-default .navbar-nav > li > a:visited {
+  color: purple;
+}
+.navbar-default .navbar-nav li a:hover {
+    /* text-decoration: underline; */
+	cursor: pointer;
+
+  }
+.navbar-toggle {
+	background-color: #d9deff;
+	position: relative;
+  float: right;
+  padding: 9px 10px 4px 10px;
+  margin-top: 7px;
+  margin-right: 5px;
+  margin-bottom: 8px;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.navbar-default .navbar-toggle:hover{
+	background-color: #d9deff;
+
+ }
+ .navbar-default {
+  background-color: #d9deff;
+  border-color: #c0c8ff;;
+/*   margin-right: -6px;
+  padding-right: 5px; */
+}
+.navbar .brand { 
+max-height: 68px; 
+max-width: 420px;
+overflow: visible;
+padding-top: 0;
+/* float:left;   */
+}
+
+.icon-bar {
+	color: navy;
+  }
+/* Regular Links*/
+.alink {color:blue;}
+a {
+	color:blue;
+	text-decoration: none;
+	cursor: pointer;
+}
+/* visited link */
+a:visited {
+    color: purple;
+}
+a.alink:visited {
+	color: purple;
+}
+a .logouthover:hover {
+	font-weight: bold;
+}
+.underline-on-hover:hover {
+    text-decoration: underline;
+	cursor: pointer;
+}
+/*moves up Expand and Collaspe on Detail page*/
+.padLeft {
+	margin-left: -15px;
+}
+.padPlus {
+	padding-top:10px;
+}
+.padPlusMyServicesMenu {
+	padding-top:5px;
+}
+.padPlus_Add5 {
+	padding-top: 5px;
+}
+.padPlusnav{
+	padding-top:25px;
+}
+.padPlusnavMyServices{
+	padding-top:52px;
+}
+.padMinus {
+	margin-top: -17px;
+}
+.padMinus_5 {
+	margin-top: -5px;
+}
+.padMinus_17 {
+	margin-top: -17px;
+}
+.padMinus_20 {
+	margin-top: -20px;
+}
+.padMinus_25 {
+	margin-top: -25px;
+}
+.padMinus_10 {
+	margin-top: -10px;
+}
+.padMinus_30 {
+	margin-top: -30px;
+}
+.padMinus_35 {
+	margin-top: -35px;
+}
+.padMinus_45 {
+	margin-top: -45px;
+}
+.padMinus_40 {
+	margin-top: -40px;
+}
+.padMinusEP {
+	margin-top: -10px;
+}
+.padMinusVal {
+	margin-top: -30px;
+}
+.padMinusValLogin {
+	margin-top: -52px;
+}
+.padMinusDetail {
+	margin-top: -26px;
+}
+.padMinusSearch {
+	margin-top: -10px;
+}
+.padMinusSearchDetail {
+	margin-top: -35px;
+}
+.environmentlabel {
+	font-size: xx-large;
+	font-weight: bolder;
+	text-align: center;
+	color: Chartreuse;
+}
+/* make sidebar nav vertical */ 
+@media (min-width: 768px) {
+.sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+    overflow-x:hidden;
+    margin:0 auto;
+  }
+.sidebar-nav .navbar ul {
+    float: none;
+  }
+.sidebar-nav .navbar ul:not {
+    display: block;
+  }
+.sidebar-nav .navbar li {
+    float: none;
+    display: block;
+    padding-left: 4px;
+  }
+.sidebar-nav .navbar li a {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+.sidebar-nav .navbar li a:hover {
+    /* text-decoration: underline; */
+	cursor: pointer;
+  }    
+}
+
+@media screen and (max-width: 666px) {
+    
+    .detailFeeInfotblEmptyCell {
+        display:none !important;
+    }
+}
+    
+
+@media (min-width: 667px) {
+  .navbar-nav {
+    float: leftwards;
+    margin: 5px;
+  }
+  .navbar-nav > li {
+     /* float: left;  */
+
+  }
+  .navbar-nav > li > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+	padding-left: 3px;
+
+  }
+  .nav, .dropdown, .nav.dropdown {
+color: #E8EBFF;}
+}
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+    background: #D9DEFF;
+}
+.table-hover > tbody > tr > td.active:hover,
+.table-hover > tbody > tr > th.active:hover,
+.table-hover > tbody > tr.active:hover > td,
+.table-hover > tbody > tr:hover > .active,
+.table-hover > tbody > tr.active:hover > th {
+  background-color: #D9DEFF;
+}
+.table-hover > tbody > tr > td.success:hover,
+.table-hover > tbody > tr > th.success:hover,
+.table-hover > tbody > tr.success:hover > td,
+.table-hover > tbody > tr:hover > .success,
+.table-hover > tbody > tr.success:hover > th {
+  background-color: #D9DEFF;
+}
+.table-hover > tbody > tr > td.info:hover,
+.table-hover > tbody > tr > th.info:hover,
+.table-hover > tbody > tr.info:hover > td,
+.table-hover > tbody > tr:hover > .info,
+.table-hover > tbody > tr.info:hover > th {
+  background-color: #D9DEFF;
+}
+.table-hover > tbody > tr > td.warning:hover,
+.table-hover > tbody > tr > th.warning:hover,
+.table-hover > tbody > tr.warning:hover > td,
+.table-hover > tbody > tr:hover > .warning,
+.table-hover > tbody > tr.warning:hover > th {
+  background-color: #D9DEFF;
+}
+table.dataTable.hover tbody tr:hover,
+table.dataTable.hover tbody tr.odd:hover,
+table.dataTable.hover tbody tr.even:hover, table.dataTable.display tbody tr:hover,
+table.dataTable.display tbody tr.odd:hover,
+table.dataTable.display tbody tr.even:hover {
+  background-color: #D9DEFF;
+}
+table.dataTable.hover tbody tr:hover.selected,
+table.dataTable.hover tbody tr.odd:hover.selected,
+table.dataTable.hover tbody tr.even:hover.selected, table.dataTable.display tbody tr:hover.selected,
+table.dataTable.display tbody tr.odd:hover.selected,
+table.dataTable.display tbody tr.even:hover.selected {
+  background-color: #D9DEFF;
+}
+table.dataTable.display tbody tr:hover > .sorting_1,
+table.dataTable.display tbody tr.odd:hover > .sorting_1,
+table.dataTable.display tbody tr.even:hover > .sorting_1, table.dataTable.order-column.hover tbody tr:hover > .sorting_1,
+table.dataTable.order-column.hover tbody tr.odd:hover > .sorting_1,
+table.dataTable.order-column.hover tbody tr.even:hover > .sorting_1 {
+  background-color: #D9DEFF;
+}
+table.dataTable.display tbody tr:hover > .sorting_2,
+table.dataTable.display tbody tr.odd:hover > .sorting_2,
+table.dataTable.display tbody tr.even:hover > .sorting_2, table.dataTable.order-column.hover tbody tr:hover > .sorting_2,
+table.dataTable.order-column.hover tbody tr.odd:hover > .sorting_2,
+table.dataTable.order-column.hover tbody tr.even:hover > .sorting_2 {
+  background-color: #D9DEFF;
+}
+table.dataTable.display tbody tr:hover > .sorting_3,
+table.dataTable.display tbody tr.odd:hover > .sorting_3,
+table.dataTable.display tbody tr.even:hover > .sorting_3, table.dataTable.order-column.hover tbody tr:hover > .sorting_3,
+table.dataTable.order-column.hover tbody tr.odd:hover > .sorting_3,
+table.dataTable.order-column.hover tbody tr.even:hover > .sorting_3 {
+  background-color: #D9DEFF;
+}
+table.dataTable.display tbody tr:hover.selected > .sorting_1,
+table.dataTable.display tbody tr.odd:hover.selected > .sorting_1,
+table.dataTable.display tbody tr.even:hover.selected > .sorting_1, table.dataTable.order-column.hover tbody tr:hover.selected > .sorting_1,
+table.dataTable.order-column.hover tbody tr.odd:hover.selected > .sorting_1,
+table.dataTable.order-column.hover tbody tr.even:hover.selected > .sorting_1 {
+  background-color: #D9DEFF;
+}
+table.dataTable.display tbody tr:hover.selected > .sorting_2,
+table.dataTable.display tbody tr.odd:hover.selected > .sorting_2,
+table.dataTable.display tbody tr.even:hover.selected > .sorting_2, table.dataTable.order-column.hover tbody tr:hover.selected > .sorting_2,
+table.dataTable.order-column.hover tbody tr.odd:hover.selected > .sorting_2,
+table.dataTable.order-column.hover tbody tr.even:hover.selected > .sorting_2 {
+  background-color: #D9DEFF;
+}
+table.dataTable.display tbody tr:hover.selected > .sorting_3,
+table.dataTable.display tbody tr.odd:hover.selected > .sorting_3,
+table.dataTable.display tbody tr.even:hover.selected > .sorting_3, table.dataTable.order-column.hover tbody tr:hover.selected > .sorting_3,
+table.dataTable.order-column.hover tbody tr.odd:hover.selected > .sorting_3,
+table.dataTable.order-column.hover tbody tr.even:hover.selected > .sorting_3 {
+  background-color: #D9DEFF;
+}
+table.dataTable.hover tbody tr:hover,
+table.dataTable.hover tbody tr.odd:hover,
+table.dataTable.hover tbody tr.even:hover, table.dataTable.display tbody tr:hover,
+table.dataTable.display tbody tr.odd:hover,
+table.dataTable.display tbody tr.even:hover {
+  background-color: #D9DEFF;
+}
+table.dataTable.hover tbody tr:hover.selected,
+table.dataTable.hover tbody tr.odd:hover.selected,
+table.dataTable.hover tbody tr.even:hover.selected, table.dataTable.display tbody tr:hover.selected,
+table.dataTable.display tbody tr.odd:hover.selected,
+table.dataTable.display tbody tr.even:hover.selected {
+  background-color: #D9DEFF;
+}
+table.dataTable.display tbody tr:hover > .sorting_1,
+table.dataTable.display tbody tr.odd:hover > .sorting_1,
+table.dataTable.display tbody tr.even:hover > .sorting_1, table.dataTable.order-column.hover tbody tr:hover > .sorting_1,
+table.dataTable.order-column.hover tbody tr.odd:hover > .sorting_1,
+table.dataTable.order-column.hover tbody tr.even:hover > .sorting_1 {
+  background-color: #D9DEFF;
+}
+table.dataTable.display tbody tr:hover > .sorting_2,
+table.dataTable.display tbody tr.odd:hover > .sorting_2,
+table.dataTable.display tbody tr.even:hover > .sorting_2, table.dataTable.order-column.hover tbody tr:hover > .sorting_2,
+table.dataTable.order-column.hover tbody tr.odd:hover > .sorting_2,
+table.dataTable.order-column.hover tbody tr.even:hover > .sorting_2 {
+  background-color: #D9DEFF;
+}
+table.dataTable.display tbody tr:hover > .sorting_3,
+table.dataTable.display tbody tr.odd:hover > .sorting_3,
+table.dataTable.display tbody tr.even:hover > .sorting_3, table.dataTable.order-column.hover tbody tr:hover > .sorting_3,
+table.dataTable.order-column.hover tbody tr.odd:hover > .sorting_3,
+table.dataTable.order-column.hover tbody tr.even:hover > .sorting_3 {
+  background-color: #D9DEFF;
+}
+table.dataTable.display tbody tr:hover.selected > .sorting_1,
+table.dataTable.display tbody tr.odd:hover.selected > .sorting_1,
+table.dataTable.display tbody tr.even:hover.selected > .sorting_1, table.dataTable.order-column.hover tbody tr:hover.selected > .sorting_1,
+table.dataTable.order-column.hover tbody tr.odd:hover.selected > .sorting_1,
+table.dataTable.order-column.hover tbody tr.even:hover.selected > .sorting_1 {
+  background-color: #D9DEFF;
+}
+table.dataTable.display tbody tr:hover.selected > .sorting_2,
+table.dataTable.display tbody tr.odd:hover.selected > .sorting_2,
+table.dataTable.display tbody tr.even:hover.selected > .sorting_2, table.dataTable.order-column.hover tbody tr:hover.selected > .sorting_2,
+table.dataTable.order-column.hover tbody tr.odd:hover.selected > .sorting_2,
+table.dataTable.order-column.hover tbody tr.even:hover.selected > .sorting_2 {
+  background-color: #D9DEFF;
+}
+table.dataTable.display tbody tr:hover.selected > .sorting_3,
+table.dataTable.display tbody tr.odd:hover.selected > .sorting_3,
+table.dataTable.display tbody tr.even:hover.selected > .sorting_3, table.dataTable.order-column.hover tbody tr:hover.selected > .sorting_3,
+table.dataTable.order-column.hover tbody tr.odd:hover.selected > .sorting_3,
+table.dataTable.order-column.hover tbody tr.even:hover.selected > .sorting_3 {
+  background-color: #D9DEFF;
+}
+
+table.dataTable.display tbody tr.odd > .sorting_1, table.dataTable.order-column.stripe tbody tr.odd > .sorting_1 {
+  background-color:  #E8EBFF;
+}
+table.dataTable.display tbody tr.odd > .sorting_2, table.dataTable.order-column.stripe tbody tr.odd > .sorting_2 {
+  background-color: #E8EBFF;
+}
+table.dataTable.display tbody tr.odd > .sorting_3, table.dataTable.order-column.stripe tbody tr.odd > .sorting_3 {
+  background-color: #E8EBFF;
+}
+table.dataTable.display tbody tr.odd.selected > .sorting_1, table.dataTable.order-column.stripe tbody tr.odd.selected > .sorting_1 {
+  background-color: #E8EBFF;
+}
+table.dataTable.display tbody tr.odd.selected > .sorting_2, table.dataTable.order-column.stripe tbody tr.odd.selected > .sorting_2 {
+  background-color: #E8EBFF;
+}
+table.dataTable.display tbody tr.odd.selected > .sorting_3, table.dataTable.order-column.stripe tbody tr.odd.selected > .sorting_3 {
+  background-color: #E8EBFF;
+}
+table.dataTable.display tbody tr.even > .sorting_1, table.dataTable.order-column.stripe tbody tr.even > .sorting_1 {
+  background-color: white;
+}
+table.dataTable.display tbody tr.even > .sorting_2, table.dataTable.order-column.stripe tbody tr.even > .sorting_2 {
+  background-color: white;
+}
+table.dataTable.display tbody tr.even > .sorting_3, table.dataTable.order-column.stripe tbody tr.even > .sorting_3 {
+  background-color: white;
+}
+table.dataTable.display tbody tr.even.selected > .sorting_1, table.dataTable.order-column.stripe tbody tr.even.selected > .sorting_1 {
+  background-color: white;
+}
+table.dataTable.display tbody tr.even.selected > .sorting_2, table.dataTable.order-column.stripe tbody tr.even.selected > .sorting_2 {
+  background-color: white;
+}
+table.dataTable.display tbody tr.even.selected > .sorting_3, table.dataTable.order-column.stripe tbody tr.even.selected > .sorting_3 {
+  background-color: white;
+}
+
+
+table.dataTable.display tbody tr.odd {
+  background-color: white;
+  }
+table.dataTable.stripe tbody tr.odd{
+  background-color: #E8EBFF;
+  }
+table.dataTable tbody td {
+  padding: 4px 6px;
+}
+.detailHeaderPermits {
+    color:white; 
+    line-height: .000001; 
+     display:none; 
+
+}
+/*.FormtableData1 {background:#E0E0E0}*/
+/*table, th, td{
+     border: 1px solid white;
+     
+}*/
+table, th, td { border-collapse:collapse; border-spacing: 0px; border: 1px solid white; }
+/*changes spacing of cell (line-height)*/
+table tr td {
+	padding: 1px;
+    line-height: 1.15;/*42857143;*/
+}
+.smallpad {
+	padding:0px;
+	line-height: .25;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 6px;
+  line-height: 1.15;/*42857143;*/
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
+tr.group,
+tr.group:hover {
+    background-color: aliceblue !important;
+}
+.receiptheaders {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+select option {
+	color: black;
+	font-size:12px;
+    font-weight:bolder;
+    font-family:Arial, Helvetica, sans-serif;
+}
+select option:first-child {
+	color: black;
+}
+select.empty {
+	color: red;
+}
+
+/*CSS settings for Site*/
+#Body {
+		background-color: #0E3252;
+	}
+.menubottom {
+	    /*background: url('../images/LeftMenuWhiteBottom.png') no-repeat left bottom; */
+	    width: 100%; 
+	    height: 20px;
+    }
+.menuDataLeftColumnhelp{
+	padding: 8px 8px 8px 8px;
+	background-color: #D9DEFF;
+	vertical-align: middle;
+	border-spacing: inherit;
+	text-align: center;
+    font-weight: bold;
+	font-size: 11pt;
+	font: normal normal small sans-serif;
+}
+.menuDataRightColumnhelp {
+	padding: 8px 8px 8px 8px;
+	background-color: #E8EBFF;
+	border-spacing: 8px;
+    font-size: 13pt;
+	font: normal normal small sans-serif;
+}
+.menuDataRightColumn {
+	padding: 8px 8px 8px 8px;
+	background-color: #E8EBFF;
+	border-spacing: 8px;
+    font-size: 11pt;
+}
+.MenuTable {border-collapse: separate;border-spacing: 0px; border: 2px solid white; }
+#SearchTable {
+    border-spacing:2px 2px;
+    border-collapse:separate;
+}
+
+#SearchTable td {
+    border:1px solid black;
+}
+.defaultSmallFont {
+    font:.1em;
+}
+.detailDataLeftColumnSmall {
+    outline-color: #FFFFFF;
+    font:xx-small/* "Segoe UI", Tahoma, Geneva, Verdana, "sans-serif normal" normal normal;*/
+    outline: #FFFFFF solid thin;
+    background: #E8EBFF;
+    text-align: Left;
+    font-size: small;
+    font-weight: bold;
+}
+.detailDataLeftColumn {
+    outline-color: #FFFFFF;
+    font:small/* "Segoe UI", Tahoma, Geneva, Verdana, "sans-serif normal" normal normal;*/
+    outline: #FFFFFF solid thin;
+    background: #E8EBFF;
+    text-align: Left;
+    font-size: small;
+    font-weight: bold;
+}
+.detailDataLeftColumn {
+    outline-color: #FFFFFF;
+    font: small;/* "Segoe UI", Tahoma, Geneva, Verdana, "sans-serif normal" normal normal;*/
+    outline: #FFFFFF solid thin;
+    background: #E8EBFF;
+    text-align: Left;
+    font-size: small;
+    font-weight: bold;
+}
+
+.detailDataRightColumn {
+    font: small;/* "Segoe UI", Tahoma, Geneva, Verdana, "sans-serif normal" normal normal*/;
+    text-align: Left;
+    background: #E8EBFF;
+    outline-color: #FFFFFF;
+    outline: #FFFFFF solid thin;
+}
+
+.detailDataLeftLabelOriginal {
+    font: normal normal bold small "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: Left;
+    margin-left: 11px;
+    margin-right: 15px;
+}
+.detailDataLeftLabel {
+    font: normal normal small sans-serif;
+    text-align: Left;
+    margin-left: 11px;
+    margin-right: 15px;
+}
+.detailDataLeftLabelGroup {
+	font: normal normal small sans-serif;
+	text-align: Left;
+	margin-left: 11px;
+	margin-right: 15px;
+}
+
+.detailDataHeading {
+	font-weight: bold;
+	font-size: 1em;
+	color: #000000;
+}
+.detailTextIndent {
+	text-indent: 30px;
+	
+}
+.detailTextIndentInvisible-sm-desc{
+	text-indent: 30px;
+	word-wrap: break-word;
+}
+.detailTextIndentInvisible-sm-info{
+	text-indent: 0px;
+	word-wrap: break-word;
+}
+.detailTextIndentInvisible-sm-desc:after{
+	content: attr(data-title);
+	text-indent: 0px;
+	word-wrap: break-word;
+}
+
+.detailTextIndentInvisible-sm-info:after{
+	content: attr(data-title);
+	text-indent: 0px;
+	word-wrap: break-word;
+}
+.sansText {
+	font: normal normal small sans-serif;
+}
+//Column Specific Classes for Appearance through Dynamic results
+.detailTextIndentPROCESSDESCRIPTION{
+	width:40%;
+
+}
+.detailTextIndentSTATUS{
+	width: 16%;
+}
+.detailTextIndentScheduleDate {
+	width:17%;
+}
+.detailTextIndentStartDate {
+	width:17%;
+}
+.detailTextIndentEndDate {
+	width:17%;
+}
+.detailPeopleDescription {
+	width: 25%;
+}
+.detailSubPermitDescription {
+	width: 25%;
+}
+.detailFeeInfoFEEDESCRIPTION{
+	text-align: right;
+	width: 70%;	
+}
+.detailFeeInfoFEEAMOUNT{
+	text-align: right;
+	width: 15%;	
+}
+.detailFeeInfoBALANCE{
+	text-align: right;
+	width: 15%;	
+}
+.detailFeeInfotblFEEDESCRIPTION{
+		text-align: right;
+		background-color:white;
+		padding:-1px -1px -1px -1px;
+}
+.detailFeeInfotblFEEAMOUNT {
+		text-align: right;
+		padding:-1px -1px -1px -1px;
+}
+.detailFeeInfotblBALANCE {
+		text-align: right;
+		padding:-1px -1px -1px -1px;
+}
+
+tr.detailFeeInfotblTOTAL td {
+		text-align: right;
+		background-color:white;
+		padding:-1px -1px -1px -1px;
+		font-weight:bolder;
+}
+
+.detailFeeInfotblFEEDESCRIPTIONFINAL {
+		text-align: right;
+		background-color:white;
+		padding:-1px -1px -1px -1px;
+		font-weight:bolder;
+
+}
+.detailFeeInfotblFEEAMOUNTFINAL {
+		text-align: right;
+		padding:-1px -1px -1px -1px;
+		font-weight:bolder;
+}
+.detailFeeInfotblBALANCEFINAL {
+		text-align: right;
+		padding:-1px -1px -1px -1px;
+		font-weight:bolder;
+}
+
+.detailFeeInfoPayLinks {
+    text-align:center;
+}
+
+.floatbutton {
+    font: normal normal bold small sans-serif;
+	float: left;
+	margin-top: 4px;
+}
+
+.floatright {
+    font: normal normal bold small sans-serif;
+	float: right;
+	margin-top: 4px;
+}
+.floatrightSearch {
+    font: normal normal bold small sans-serif;
+	float: right;
+	margin-top: 4px;
+	margin-right: -16px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.floatleft {
+    font: normal normal bold small sans-serif;
+	float: left;
+	/* margin-left:-3px; */
+	font-size:xx-small;
+}
+.floatleftapply {
+	margin-left: -12px;
+}
+.floatleftapplylabels {
+	margin-left: 0px;
+	margin-bottom: 0px;
+	padding-top: 3px;
+}
+.floatschedule {
+	float: right;
+	top: -47px;
+}
+.floataround {
+float: right;
+
+}
+.detailText { font-size:9.5pt;
+	text-decoration: none;
+	line-height: 1.18em;  /* margin: 0px; padding: 0px; */
+	}
+.detailData {background: #E8EBFF; text-align:left}
+.breadcrumbText {font-size: 8pt;}
+.breadcrumb {
+  padding: 0px 15px;
+  margin-bottom: 10px;
+  list-style: none;
+  background-color: white; 
+  border-radius: 1px;
+}
+.resultTableHeader {font-size: 10pt;color:blue;font-weight:bold;}
+.detailTable { font-weight:bold; font-size:12px; width:100%; text-align:center; }
+.detailHeader {color:white; background-color:#577993; }
+.menuDataLeftColumn{
+    padding: 8px 8px 8px 8px;   /* bgn 09/03/16 added from duplicate that was above, there are prob others */
+    text-align: left;
+	vertical-align: text-top;
+	background: #D9DEFF;
+	font-weight: bold;
+	font-size: 10pt;}
+.menuDataRightColumn {background: #E8EBFF;font-size: 12px; line-height: 110%;}
+#pageTitleNew { font-weight:bold; font-size: 14pt;}
+.pageTitleNew { font-weight:bold; height:24px;font-size: 14pt;}
+table td .pageTitleNew {
+    font-weight:bold; height:24px;font-size: 14pt;
+}
+.pageTitleNew:after{
+	content: attr(data-title);
+	text-indent: 5px;
+	font-weight:bold; 
+}
+.horizontalline {background-color: #174891;}
+.FormsubHeadings {
+	/*border-collapse:collapse;*/
+	padding: 0px;
+	text-align: left; /*font-size: 12px;*/;
+	font-size: 12px;
+	vertical-align: middle;
+	padding-left: 5px;
+	background-color: #174891;
+	color: #ffffff;
+	font-weight: bolder;
+	white-space: nowrap;
+}
+.QueryData, .ListData, .ListData1, .ListData2, .FormtableData, .FormtableData1, .FormtableData2{
+	font-size: 13px;
+	color: #000000;
+	line-height: 14px;
+
+}
+.FormtableData_MyPermits{
+	font-size: 13px;
+	color: #000000;
+	line-height: 14px;
+    text-align:center;
+
+}
+
+
+.FormtableData1 {background:#E8EBFF;}
+.FormtableDataGroup{
+	background: #D9DEFF;
+	background-color: #D9DEFF;
+}
+.FormtableLabel{font-size:12px; color: #000000; height:11px;}
+
+/* Over writes for some bootstrap classes*/
+.buttonColor{ 
+	 border: #6489ab solid 1px;
+	 -webkit-border-radius: 5px;
+	 -moz-border-radius: 5px;
+	 border-radius: 5px;
+	 background: url(../images/btn-bg.jpg) repeat-x;
+	 background-color:#edeee8;
+	 margin: 0px 5px 0;
+	 padding: 4px 8px;
+	 font-size: 10pt;
+ }
+
+.buttonColorSmall{ 
+	 border: #6489ab solid 1px;
+	 -webkit-border-radius: 5px;
+	 -moz-border-radius: 5px;
+	 border-radius: 5px;
+	 background: url(../images/btn-bg.jpg) repeat-x;
+	 background-color:#edeee8;
+	 margin: 0px 2px 0;
+	 padding: 3px 4px;
+	 font-size: 9pt;
+ }
+
+#container #content {
+	float: left;
+	display: inline;
+	font-size: 0.9em;
+	vertical-align: top;
+/*	width: 707px;*/
+	max-width: 695px;
+	margin-left: 26px;
+	margin-right: 18px;	
+}
+/*Making sure that the row holds it's space even if empty or no data*/
+#detail_list_resp td {
+height: 100%;
+min-height: 14px;
+}
+#detail_list_resp_3 td {
+height: 100%;
+min-height: 14px;
+}
+#detail_list_resp_4 td {
+height: 100%;
+min-height: 14px;
+}	
+#detail_list_resp_5 td {
+height: 100%;
+min-height: 14px;
+}
+#myPermits td {
+height: 100%;
+min-height: 14px;
+}
+#permitDetails td {
+height: 100%;
+min-height: 14px;
+}
+#detail_list_resp_1 td {
+height: 100%;
+min-height: 14px;
+}
+.validationwarning {
+    color:red;
+    font-style:italic;
+    font-weight:bold;
+    font-size:.9em;
+}
+/*Toggle Hide/Show*/
+
+
+.parentofchildren {
+	color: blue;
+	font-size: .9em;
+	cursor: pointer;
+}
+.click-header{
+	font-weight:bolder;
+/* background: url(../Images/arrow-down.png) no-repeat 100% 100%; */
+}
+.expanded-header {
+	font-weight:bolder;
+/* background: url(../Images/arrow-up.png) no-repeat 100% 100%; */
+}
+	
+.innerDetails {
+display:none; 
+border: 1px solid #d7dbd8;
+/*padding: 20px;
+text-align: center;*/
+}
+
+.alertStyle{
+color:navy;
+font-weight: bold;
+font-size: 1em;
+width: 100%;
+text-decoration: blink;
+
+
+}
+.inlineplacement {
+	position: relative;
+	top: -47px;
+	left: 350px;
+}
+.focusfld
+{
+  color: lightgrey;
+}
+.focusprofile
+{
+    color: black;
+}
+
+
+   .normalfld
+{
+    color: darkblue;
+}
+
+table { empty-cells: show; }
+.appliedfee {
+	color: maroon;
+	font-weight: bold;
+}
+.paymentchoice {
+    font-size: 1.1em;
+}
+.radiomargin {
+    margin-left: -3px;
+}
+.PnlDesign
+{
+    border: solid 1px #000000;
+    height: 150px;
+    width: 330px;
+    overflow-y:scroll;
+    background-color: #EAEAEA;
+    font-size: 15px;
+    font-family: Arial;
+}
+.txtbox
+{
+    background-image: url(../images/sort_desc.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.chkChoice td 
+{ 
+    padding-left: 20px; 
+}
+.chkChoice label
+{
+    padding-left: 5px;
+}
+
+.subPermitsColumn {
+    font-size: 10px;
+    width: 60px;
+}
+
+.FT_Default_Form {
+    background-color: #E8EBFF;
+}
+
+#footerwrap {	
+	clear: both;
+	font-size: 1em;
+	margin: 0 auto;
+	background-image: url("../Images/Footer.CenterWave.InnerPages.png");
+	background-repeat: no-repeat;
+	font-family: Arial,Helvetica,sans-serif;
+	padding: 110px 18px 0 18px;
+	background-color: #fff;
+    padding-bottom: 10px;
+    color: #000;
+}
+
+#footerwrap a:link, #footerwrap a:visited  {        
+    padding: 0 5px;
+    color: #000;
+}
+
+.menutop {
+    /*background: url('../Images/leftmenuwhitetop.png') no-repeat left top;*/
+    width: 100%;
+    height: 16px;
+}
+#top-menu, .navbar-default{
+	/*background-color: #fee6c0;*/
+}
+
+.navbar-default .navbar-collapse {
+	border:0;
+}
+
+.sidebar-nav {
+	padding-left: 10px;
+  }
+  
+#prettyprint {
+ 	padding-right: 3em;
+ 	margin-left: -10px;
+ 	}
+ 	
+@media (max-width:768px) {
+  #footerwrap {
+	background-image: none;
+	padding: 10px;
+	border-top:solid 4px #174891;
+	font-size:0.9em;
+  }
+  
+  .sidebar-nav {
+	padding-left: 0px;
+  }
+  
+  #prettyprint {
+ 	margin-left: 0px;
+ 	}
+}
+
+/*-------------------------------------------------------*/
+/*-- REM-08/15/2018 Styles for the Fee Calculator		-*/ 
+/*-------------------------------------------------------*/
+
+.alert-info 
+{
+    color: #000000;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.legenda 
+{
+    font-weight:bold; font-size: 1.03em; border: 0; margin-bottom: 0.3em;
+}
+
+.impact-fee-units{
+	 padding-top:30px; margin-left:15px;
+}
+
+@media only screen and (max-width : 990px){	
+	.impact-fee-units { padding-top:10px; margin-left:15px;}
+}
+
+.impact-fee-rate-btn, .impact-fee-rate-btn:visited
+{
+	background-color: #FECF7D; color:#000000; border: 1px solid #888;
+}
+
+table.impact-fee-result
+		{
+			border: 1px solid rgb(56, 55, 55);
+			border-collapse: collapse;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+table.impact-fee-result th,
+table.impact-fee-result td
+{
+	border: 1px solid black;
+	padding: 10px;
+	text-align: center;
+	}
+table.impact-fee-result th,
+table.impact-fee-result thead th { background-color: #C0DCF8; }
+table.impact-fee-result tfoot th { background-color: #EEEEEE; }
+
+.leyenda 
+{
+    font-weight:bold; font-size: 1.03em; border: 0; margin-bottom: 0.3em; padding-top:2em;
+}
+
+.checkbox 
+{
+	display: inline; padding-left: 25px;
+}
+
+.checkbox label 
+{
+    display: inline; padding-left: 0px;
+}
+
+.btn-primary 
+{
+    color: #fff;
+    background-color: #275C8B;
+    border-color: #337AB8;
+}
+
+.yellow-button-centered
+{
+     text-align:center;
+}
+/*-------------------------------------------------------*/
+/*-- Ends styles for the fee calculator					-*/ 
+/*-------------------------------------------------------*/

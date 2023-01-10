@@ -1,0 +1,21 @@
+﻿@media only screen and (max-width: 767px) {
+    
+    #ft-wrap {
+        width:100%;
+        border:none;
+    }
+
+    #ft-wrap div {
+        /* Behave  like a "row" */
+        width:100%;
+        float:none;
+        border:none;
+        margin:0px;
+        padding:10px 0px 0px 0px;
+    }
+
+   #ft-wrap span {
+        /* Behave  like a "row" */
+        display:none;
+    }
+}

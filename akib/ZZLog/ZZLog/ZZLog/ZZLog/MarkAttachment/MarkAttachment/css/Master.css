@@ -1,0 +1,456 @@
+﻿
+body {
+    background: #333333 url(../Images/g567.jpg);
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 10px;
+}
+
+input[type=checkbox] {
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(1.4); /* IE */
+    -moz-transform: scale(1.4); /* FF */
+    -webkit-transform: scale(1.4); /* Safari and Chrome */
+    -o-transform: scale(1.4); /* Opera */
+    transform: scale(1.4);
+    padding: 10px;
+}
+
+.masterFooter {
+    color: black;
+    background-color: lightgray;
+    border-top: 1px solid #939393;
+}
+
+.masterBody {
+    min-height: 400px;
+    height: auto;
+}
+
+.pageBreadcrump {
+    min-height: 5px;
+    background-color: #f7f6ed;
+    min-height: 10px;
+    vertical-align: middle;
+    height: auto;
+    color: white;
+    border-bottom: 1px solid #9e9947;
+}
+
+.tooltip-inner {
+    white-space: pre;
+}
+
+.reversed {
+    padding: 3rem 0 0 0;
+}
+
+.ui-dialog-titlebar-close {
+    visibility: hidden;
+}
+
+.ui-widget-header {
+    color: darkcyan;
+}
+
+.ui-widget-overlay {
+    opacity: .70 !important; /* Make sure to change both of these, as IE only sees the second one */
+    filter: Alpha(Opacity=70) !important;
+    background: rgb(50, 50, 50) !important; /* This will make it darker */
+}
+
+.reversed .control-label {
+    margin: -4.5rem 0 0 0;
+    float: left;
+}
+
+input.is-valid ~ label {
+    color: green;
+}
+
+input.is-invalid ~ em {
+    color: red;
+}
+
+select.is-invalid ~ em {
+    color: red;
+}
+
+div.ms-options-wrap ~ span {
+    color: red;
+}
+
+.MandatoryBorder:focus {
+    border-color: #ffb3b3;
+}
+
+
+
+.ms-options-wrap > .ms-options > ul li.selected label, .ms-options-wrap > .ms-options > ul label:hover {
+    background-color: darkcyan;
+    color: white;
+}
+
+.ms-options-wrap > button:focus, .ms-options-wrap > button {
+    display: block;
+    color: #495057;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 1em;
+    padding: .375rem .75rem;
+    background-clip: padding-box;
+    border-radius: .25em;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    border: 1px solid #ced4da;
+    height: calc(1.5em + .75rem + 2px);
+}
+
+.DetailBottomText {
+    color: #9e9947;
+}
+
+
+
+.fontRed {
+    color: #cc0000;
+}
+
+.paddingTop2px {
+    padding-top: 2px;
+}
+
+.DueDT {
+    padding-top: 20px;
+    color: #0099ff;
+    font-weight: bold;
+    font-size: 1.02em;
+}
+
+.aLinkColor {
+    font-size: 1.22rem;
+}
+
+a {   
+    text-decoration: none !important;
+}
+
+    a:hover {
+        color: #ff6600;
+        text-decoration: underline !important;
+    }
+
+
+.aMain {
+    color: #993A00;
+    border-bottom: 1px solid royalblue;
+    text-decoration: none;
+}
+
+a.aMain:visited {
+    /*color: #ff6666;*/
+    /*color: rgba(185,68,0,1);*/
+    color: #993A00;
+    border-bottom: 1px solid royalblue;
+    text-decoration: none;
+}
+
+a.aMain:active {
+    color: #993A00;
+    border-bottom: 1px solid royalblue;
+    text-decoration: none;
+}
+
+a.aMain:hover {
+    color: orangered;
+    text-decoration: none !important;
+    border-bottom: 1px solid red;
+}
+
+.aSiteDetailLink {
+    color: #008b8b;
+}
+
+a.aSiteDetailLink:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+.datepicker table tr td.active:active, .datepicker table tr td.active.highlighted:active, .datepicker table tr td.active.active, .datepicker table tr td.active.highlighted.active, .open > .dropdown-toggle.datepicker table tr td.active, .open > .dropdown-toggle.datepicker table tr td.active.highlighted {
+    color: #ffffff;
+    background-color: darkcyan;
+    border-color: #006666;
+}
+
+.datepicker table tr td.focus:focus {
+    /* Set her your custom color */
+    background-color: #337ab7;
+    color: #fff;
+}
+
+.fff {
+    padding-left: 0;
+}
+
+.ui-datepicker-header {
+    background: #f7f6ed;
+}
+
+
+
+
+
+.datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled.active:hover, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active:active, .datepicker table tr td.active.active:hover, .datepicker table tr td.active:hover:active {
+    color: #ffffff;
+    background-color: darkcyan;
+    border-color: #006666;
+}
+
+.datepicker table tr td.active, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active:hover {
+    background-image: none;
+}
+
+.multiselect-container {
+    width: 100% !important;
+}
+
+form {
+    max-width: 100%;
+}
+
+#data-title {
+    color: darkcyan;
+}
+
+/*.table td {
+            border: #e7e5ca solid 1px !important;
+        }
+
+        .table th {
+            border: #e7e5ca solid 1px !important;
+        }*/
+
+
+table.row-border.dataTable tbody th, table.row-border.dataTable tbody td, table.display.dataTable tbody th, table.display.dataTable tbody td {
+    border-top: 1px solid #dfdcb9;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: #f7f6ed;
+}
+
+
+
+table.display.dataTable tbody tr.odd > .sorting_1, table.stripe.order-column.dataTable tbody tr.odd > .sorting_1 {
+    background-color: #efeddc;
+}
+
+/*table.display.dataTable tbody tr.even > .sorting_1, table.stripe.order-column.dataTable tbody tr.even > .sorting_1 {
+           background-color: white;
+        }*/
+
+table.dataTable thead th, table.dataTable thead td {
+    border: 1px solid #c7c185;
+    padding: 8px 10px;
+}
+
+table.no-footer.dataTable {
+    border: 1px solid #c7c185;
+}
+
+.table-bordered td, .table-bordered th {
+    border: 1px solid #c7c185;
+}
+
+.nav-link {
+    color: white;
+}
+
+    .nav-link:hover {
+        color: yellow;
+    }
+
+    .nav-link:active {
+        color: black;
+    }
+
+.divcontent {
+    min-height: 800px;
+    overflow-y: auto;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff;
+    border-color: darkcyan;
+    background-color: darkcyan;
+}
+
+
+
+fieldset.scheduler-border {
+    border: solid 1px #b8b261 !important;
+    padding: 0 10px 10px 10px;
+    border-bottom: none;
+}
+
+legend.scheduler-border {
+    width: auto !important;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: darkcyan;
+}
+
+.bodylabel {
+    color: darkcyan;
+}
+
+.fgh {
+    color: darkcyan;
+}
+
+.card {
+    border-color: #b8b261;
+}
+
+.ccontainer-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1600px; /* or 950px */
+}
+
+.page-link {
+            color: darkcyan;
+        }
+
+        .page-item.active .page-link {
+            z-index: 1;
+            color: #fff;
+            background-color: darkcyan;
+            border-color: #008080;
+        }
+
+            .page-item.active .page-link:hover {
+                background-color: #009999;
+                border-color: #008080;
+            }
+
+        .page-link:focus, .page-link:hover {
+            color: darkcyan;
+        }
+
+.btn-primary {
+    background-color: darkcyan;
+    border-color: #008080;
+    font-family: Arial;
+    font-size: 12pt;
+}
+
+ .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    background-color: #009999 !important;
+    border-color: #008080 !important;
+}
+
+
+th {
+    color: darkcyan;
+    font-size: 10pt;
+}
+
+div.dataTables_wrapper div.dataTables_filter input {
+    background-color: rgb(244, 245, 235) !important;
+    border: .25px solid #d0d4aa !important;
+}
+
+.custom-select {
+    background-color: #f7f6ed;
+}
+
+
+.navbar-custom {
+    background-color: #008b8b;
+}
+
+    /* change the brand and text color */
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-text {
+        color: rgba(255,255,255,.9);
+        font-size: 1.6em;
+    }
+
+    /* change the link color */
+    .navbar-custom .navbar-nav .nav-link {
+        color: rgba(255,255,255,.8);
+        font-size: 1.5em;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* change the color of active or hovered links */
+    /*.navbar-custom .nav-item.active .nav-link,*/
+    .navbar-custom .nav-item:hover .nav-link {
+        color: #FFF;
+        text-decoration: underline;
+    }
+
+    /* for dropdown only - change the color of droodown */
+    .navbar-custom .dropdown-menu {
+        background-color: #FFF;
+        border: 1px solid darkcyan;
+    }
+
+    .navbar-custom .dropdown-item {
+        /*color: rgba(255,255,255,.8);*/
+        color: darkcyan;
+        font-size: 1.6em;
+    }
+
+        .navbar-custom .dropdown-item:hover,
+        .navbar-custom .dropdown-item:focus {
+            color: #FFF;
+            /*background-color: rgba(255,255,255,.5);*/
+            background-color: #00cccc;
+        }
+
+    .navbar-custom .custom-toggler.navbar-toggler {
+        border-color: rgba(255,255,255,.9);
+    }
+
+.navbar-brand {
+    padding-left: 0.4em;
+}
+
+.navbar-custom .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+.dataTables_wrapper .dataTables_paginate .current.paginate_button, .dataTables_wrapper .dataTables_paginate .current.paginate_button:hover {
+    color: white !important;
+    border: .25px solid rgb(244, 245, 235) !important;
+    background-color: #008b8b !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #008b8b), color-stop(100%, #008b8b)) !important;
+    background: -webkit-linear-gradient(top, #008b8b 0%, #008b8b 100%) !important;
+    background: -moz-linear-gradient(top, #008b8b 0%, #008b8b 100%) !important;
+    background: -o-linear-gradient(top, #008b8b 0%, #008b8b 100%) !important;
+    background: linear-gradient(to bottom, #008b8b 0%, #008b8b 100%) !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: white !important;
+    border: .25px solid rgb(244, 245, 235) !important;
+    background-color: #008b8b !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #008b8b), color-stop(100%, #008b8b)) !important;
+    background: -webkit-linear-gradient(top, #008b8b 0%, #008b8b 100%) !important;
+    background: -moz-linear-gradient(top, #008b8b 0%, #008b8b 100%) !important;
+    background: -o-linear-gradient(top, #008b8b 0%, #008b8b 100%) !important;
+    background: linear-gradient(to bottom, #008b8b 0%, #008b8b 100%) !important;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td.dtr-control:before, table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th.dtr-control:before {
+    background-color: orange !important;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before, table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
+    background-color: darkcyan !important;
+}
+

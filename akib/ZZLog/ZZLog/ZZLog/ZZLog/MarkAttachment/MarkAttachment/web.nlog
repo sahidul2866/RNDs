@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<nlog xmlns="http://www.nlog-project.org/schemas/NLog.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" autoReload="true">
+
+  <variable name="logDirectory" value="D:\inetpub\logs\LogFiles\ManualTransactionOverride\"/>
+
+  <targets async="true">
+    <target name="file1" layout="${longdate}::${level}::${callsite}::${message}::${exception:format=tostring}"
+          fileName="${logDirectory}/Log_${shortdate}_App_log.txt" keepFileOpen="false"  xsi:type="File"/>
+  </targets>
+  <rules>
+    <logger name="*" minlevel="Trace" writeTo="file1" enabled="true" />
+  </rules>
+</nlog>

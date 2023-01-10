@@ -1,0 +1,28 @@
+<h1>
+    Report Generate
+</h1>
+<br>
+
+<div class="row">
+
+    <div class="col-1">
+        <label style="padding-left: 50px;">
+            JSON
+        </label>
+    </div>
+
+    <div class="col-5">
+        <textarea [(ngModel)]="json" name="Comments" mdInput placeholder="json" rows="15" cols="50"></textarea>
+    </div>
+
+</div>
+
+<br>
+
+
+<div style="padding-left: 50px;">
+    <button class="btn btn-success" (click)="onSubmit()">Send</button>
+</div>
+
+
+

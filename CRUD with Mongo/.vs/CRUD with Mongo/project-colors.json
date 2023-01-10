@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "08004016-4d61-4bd0-adb1-f6adf1321c2a": {
+      "ProjectGuid": "08004016-4d61-4bd0-adb1-f6adf1321c2a",
+      "DisplayName": "CRUD with Mongo",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

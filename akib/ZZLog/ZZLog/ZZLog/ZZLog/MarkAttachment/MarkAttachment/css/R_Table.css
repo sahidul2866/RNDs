@@ -1,0 +1,478 @@
+﻿@media only screen and (min-device-width : 767px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+.dataTitleDetailsSearch, .FormsubHeadings, .menuDataLeftColumn , .FormtableData, th{
+ font-size: .85em;
+}
+th {
+ font-size: .75em;
+}
+}
+
+
+@media only screen and (max-width: 767px) {
+    
+    /* 
+    Force table to not be like tables anymore
+ 
+    no-more-tables = nmt   
+ */
+    #nmt table,
+    #nmt thead,
+    #nmt tbody,
+    #nmt th,
+    #nmt td,
+    #nmt tr {
+        display: block;
+    }
+
+        /* Hide table headers (but not display: none;, for accessibility) */
+        #nmt thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+    #nmt .FormsubHeadings {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #nmt .pageTitleNew {
+        font-size: .75em;
+        clear: left;
+    }
+
+    #nmt .detailTextIndent {
+        text-indent: 0px;
+        white-space: normal;
+    }
+
+
+    #nmt tr {
+        border: 1px solid #ccc;
+    }
+
+    #nmt td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 39%;
+        white-space: normal;
+        text-align: left;
+    }
+
+        #nmt td:before {
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 6px;
+            left: 6px;
+            width: 20%;
+            padding-right: 10px;
+            white-space: nowrap;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        /*
+	Label the data
+	*/
+        #nmt td:before {
+            content: attr(data-title);
+        }
+
+#nmt .hideimage {
+	display: none;
+}
+#nmt .floataround {
+float: left;
+}
+
+#nmt .subPermitsColumn
+{
+    font-size:10pt;
+    width:50%;
+    text-wrap:none;    
+}
+
+    .breadcrumb {
+        padding: 8px 1px;
+        margin-bottom: 20px;
+        list-style: none;
+        background-color: white;
+        border-radius: 4px;
+    }
+
+    .detailTextIndentInvisible-sm-desc:before {
+        content: attr(data-title);
+        color: black;
+        font-weight: bolder;
+        text-indent: 1px;
+		word-wrap: break-word;
+    }
+
+    .detailTextIndentInvisible-sm-desc:after {
+		/* display:none; */
+        font-weight: bold;
+		width:1px;
+		word-wrap: break-word;
+		content: attr(data-title); 
+        color: #E8EBFF; 
+        font-weight: bold;
+		font-size: .35em;
+		line-height: auto;
+		margin-top: 2px;
+		margin-bottom: 20px;
+    }
+
+    .detailTextIndentInvisible-sm-info:before {
+        content: attr(data-title); 
+        color: #56565a; 
+        /* text-indent: 40px; */
+		word-wrap: break-word;
+		
+    }
+
+    .detailTextIndentInvisible-sm-info:after {
+        content: attr(data-title);
+        color: #E8EBFF; 
+		width: 1px;
+		word-wrap: break-word;
+    }
+
+    .pageTitleNew:before {
+        content: attr(data-title);
+        color: black;
+        font-weight: bold;
+        height: 20px;
+        font-size: 10pt;
+    }
+
+    .pageTitleNew:after {
+        content: attr(data-title);
+        color: white;
+    }
+    .dataTitleDetailsSearch:before {
+        content: attr(data-title);
+        font-size: .9em;
+        font-stretch: semi-condensed;
+    }
+
+    .dataTitleDetailsSearch:after {
+        content: '\0000a0';
+    }
+
+    tr.dataTitleDetails td:before {
+        content: attr(data-title);
+        /*font-size: .9em;*/
+        font-stretch: semi-condensed;
+    }
+
+    tr.dataTitleDetails td:after {
+        content: '\0000a0';
+    }
+        /*This was causing the extra column to show up......on the right side and on MyServices and SearchPage - 'SUB' came back on small screen
+      need to change the class for MyServices and SearchPage  */
+    tr.dataTitleDetails td {
+        width: 100%;
+    } 
+
+    .dataTitleDetails:before {
+        content: attr(data-title);
+        /*font-size: .9em;*/
+        font-stretch: semi-condensed;
+    }
+
+    .dataTitleDetails:after {
+        content: '\0000a0';
+    }
+        /*This was causing the extra column to show up......on the right side and on MyServices and SearchPage - 'SUB' came back on small screen
+      need to change the class for MyServices and SearchPage  */
+     td.dataTitleDetails {
+        width: 100%;
+    } 
+    .dataTitleDetailsName:before {
+        content: attr(data-title);
+        /*font-size: .9em;*/
+        font-stretch: semi-condensed;
+    }
+
+    .dataTitleDetailsName:after {
+        content: '\0000a0';
+        font-size: 6pt;
+    }
+
+    .detailDataLeftLabelgroup:before {
+        content: attr(data-title);
+        font-size: .85em;
+        font-stretch: semi-condensed;
+    }
+
+
+    /*Toggle Hide/Show*/
+    .click-header:before {
+        /*     content: "HIDE SUBPERMITS";
+	background-color:blue;
+	color:white;
+	font-weight:bolder; */
+    }
+
+    .expanded-header:before {
+        /* color:black;
+    content: "VIEW SUBPERMITS";
+	background-color:blue;
+	color:white;
+	font-weight:bolder; */
+    }
+
+    /* the subDivision was indented on normal desktop, remove indent */
+    .subDivisionName {
+        position:relative;left:0px;
+    }
+}
+@media only screen {
+
+/* 
+    Force table to not be like tables anymore
+ 
+    no-more-tables = nmt   
+ */
+#nmtDetails table {
+	outline-style: none;
+	}
+}
+
+
+@media print{
+  body{ background-color:#FFFFFF; background-image:none; color:#000000 }
+  #ad{ display:none;}
+  #leftbar{ display:none;}
+  #contentarea{ width:100%;}
+}
+/*This is for the Info section of the Detail Page*/
+@media only screen and (max-width: 767px) {
+
+    /* 
+    Force table to not be like tables anymore
+ 
+    no-more-tables = nmt   
+ */
+    #nmtinfo table,
+    #nmtinfo thead,
+    #nmtinfo tbody,
+    #nmtinfo th,
+    #nmtinfo td,
+    #nmtinfo tr {
+        display: block;
+    }
+
+        /* Hide table headers (but not display: none;, for accessibility) */
+        #nmtinfo thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+    #nmtinfo .FormsubHeadings {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #nmtinfo .pageTitleNew {
+        font-size: .75em;
+        clear: left;
+    }
+
+    #nmtinfo .detailTextIndent {
+        text-indent: 0px;
+        white-space: normal;
+    }
+
+
+    #nmtinfo tr {
+        border: 1px solid #ccc;
+    }
+
+    #nmtinfo td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        /*padding-left: 75%;*/
+        white-space: normal;
+        text-align: left;
+		word-wrap: break-word;
+    }
+
+        #nmtinfo td:before {
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 6px;
+            left: 6px;
+            width: 75%;
+            padding-right: 10px;
+            text-align: left;
+            font-weight: bold;
+            background-color:;
+			word-wrap: break-word;
+        }
+
+        /*
+	Label the data
+	*/
+        #nmtinfo td:before {
+            content: attr(data-title);
+        }
+
+#nmtinfo .hideimage {
+	display: none;
+}
+#nmtinfo .floataround {
+float: left;
+}
+/*Moves the heading over for the Info Section*/
+	 .detailDataLeftLabelgroup {
+		margin-left: -10px;
+        /*text-indent: 1px;
+		display: inline;
+		white-space: nowrap;
+		text-align: left;*/	
+    }
+    .breadcrumb {
+        padding: 8px 1px;
+        margin-bottom: 20px;
+        list-style: none;
+        background-color: white;
+        border-radius: 4px;
+    }
+
+    .detailTextIndentInvisible-sm-desc:before {
+        content: attr(data-title);
+        color: black;
+        /* font-weight: bolder; */
+        text-indent: 1px;
+		word-wrap: break-word;
+    }
+
+    .detailTextIndentInvisible-sm-desc:after {
+        content: attr(data-title); 
+        color: #E8EBFF; 
+        font-weight: bold;
+		font-size: .35em;
+		line-height: auto;
+		margin-top: 2px;
+		/* margin-bottom: 20px; */
+    }
+
+    .detailTextIndentInvisible-sm-info:before {
+        content: attr(data-title); 
+        color: #6666B2; 
+        /* text-indent: 40px; */
+		word-wrap: break-word;
+		line-height: auto;
+		margin-top: -2px;
+		/* margin-bottom: 20px; */
+		
+    }
+
+    .detailTextIndentInvisible-sm-info:after {
+        content: attr(data-title);
+        color: #E8EBFF; 
+		/*display:none; */
+        text-indent: 0px;
+		/* margin-bottom: 20px; */
+		font-size: .35em;
+    }
+
+    .detailTextIndentInvisible-sm-info 
+    {
+        font-weight:bold;
+        color: #6666B2; 
+    }
+
+    .pageTitleNew:before {
+        content: attr(data-title);
+        color: black;
+        font-weight: bold;
+        height: 20px;
+        font-size: 10pt;
+    }
+
+    .pageTitleNew:after {
+        content: attr(data-title);
+        color: white;
+    }
+    .dataTitleDetailsSearch:before {
+        content: attr(data-title);
+        /*font-size: .9em;*/
+        font-stretch: semi-condensed;
+    }
+
+    .dataTitleDetailsSearch:after {
+        content: '\0000a0';
+    }
+
+    tr.dataTitleDetails td:before {
+        content: attr(data-title);
+        /*font-size: .9em;*/
+        font-stretch: semi-condensed;
+    }
+
+    tr.dataTitleDetails td:after {
+        content: '\0000a0';
+    }
+        /*This was causing the extra column to show up......on the right side and on MyServices and SearchPage - 'SUB' came back on small screen
+      need to change the class for MyServices and SearchPage  */
+    tr.dataTitleDetails td {
+        width: 100%;
+    } 
+
+    .dataTitleDetails:before {
+        content: attr(data-title);
+        /*font-size: .9em;*/
+        font-stretch: semi-condensed;
+    }
+
+    .dataTitleDetails:after {
+        content: '\0000a0';
+    }
+        /*This was causing the extra column to show up......on the right side and on MyServices and SearchPage - 'SUB' came back on small screen
+      need to change the class for MyServices and SearchPage  */
+     td.dataTitleDetails {
+        width: 100%;
+    } 
+    .dataTitleDetailsName:before {
+        content: attr(data-title);
+        /*font-size: .9em;*/
+        font-stretch: semi-condensed;
+    }
+
+    .dataTitleDetailsName:after {
+        content: '\0000a0';
+        /*font-size: 6pt;*/
+    }
+
+    .detailDataLeftLabelgroup:before {
+        content: attr(data-title);
+        /*font-size: .85em;*/
+        font-stretch: semi-condensed;
+        text-align: right;
+        white-space:nowrap;
+    }
+    
+    .blinkmobile 
+    {
+        position:relative;
+        left:-40px;
+    }
+
+    /* the subDivision was indented on normal desktop, remove indent */
+    .subDivisionName {
+        position:relative;left:0px;
+    }
+}

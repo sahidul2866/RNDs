@@ -1,0 +1,148 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="BackOfficeUI.Site" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+
+    <title>Mark Attachment</title>
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="Content/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="Content/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/Master.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/dataTables.bootstrap5.min.js"></script>
+
+
+    <script type="text/javascript" src="js/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" src="js/responsive.bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="CSS/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/responsive.bootstrap.min.css" />
+
+    <link href="favicon1.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <meta name="viewport" content="width=device-width" />
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding-left: 5%;
+            padding-right: 5%;
+            background: #333333 url(Images/g567.jpg);
+            zoom: 80%;
+            -moz-transform: scale(1.2);
+            -moz-transform-origin: left top;
+        }
+
+        .container {
+            /*height: 100%;*/
+            background-color: white;
+            position: relative; /* needed for footer positioning*/
+            height: auto !important; /* real browsers */
+        }
+
+
+
+        a {
+            text-decoration: underline;
+        }
+
+        .Separator {
+            background-color: #b8b261;
+            height: 5px;
+            width: 100%;
+        }
+
+        .RptTitle {
+            background-color: #ffd300;
+            height: 5px;
+            width: 100%;
+        }
+
+        .footer {
+            bottom: 0;
+            background: #CCCCCC;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+        <div style="background-color:white">
+            <div class="row" style="padding-top: 10px; padding-bottom: 10px;">
+                <div class="col-4">
+                    <a href="ExternalAppsMain.aspx">
+                        <img alt="" id="Img1" src="Images/OrangeIcon.png" /></a>
+                </div>
+                <div class="col-8 text-center" style="vertical-align: text-bottom">
+                    <asp:Label ID="lblEnvBanner" Visible="true" Width="30%" Style="text-align: center; color: white; background-color: red; font-size: 12pt" Text="T E S T I N G" runat="server"></asp:Label>
+                    <h2 style="font-family: Arial">My Office Mark Attachment</h2>
+                </div>
+                <div>
+                    <asp:Button ID="help" runat="server" Text="Help" Font-Bold="True" OnClick="bttnpdf_Click" Width="150px" Style="margin-left: 900px" />
+                </div>
+            </div>
+            <div class="row mr-2 ml-2">
+                <div class="col Separator">
+                </div>
+            </div>
+
+            <div class="row mr-2 ml-2" style="border-top: 1px solid #006666">
+                <div class="col-md-9 " style="background-color: darkcyan; min-height: 36px; padding-top: 5px; vertical-align: middle; height: auto; color: white; border-bottom: 1px solid #008033">
+
+                    <asp:Label ID="lblMasterTitle" Style="font-family: Arial; font-size: 24px" runat="server" Text="Mark Attachment"></asp:Label>
+
+                </div>
+
+                <div class="col-md-3 text-right" style="background-color: darkcyan; min-height: 36px; padding-top: 5px; vertical-align: middle; height: auto; color: white; border-bottom: 1px solid #008033">
+                    <asp:LinkButton ID="btnHome" ForeColor="White" runat="server" Text="Home" PostBackUrl="~/Home.aspx"></asp:LinkButton>
+                </div>
+                <br />
+            </div>
+            <div id="divNavigate" visible="false" runat="server" class="row text-right">
+                <div class="col-md-12 pageBreadcrump">
+                    <asp:Label ID="lblNavigate" runat="server"></asp:Label>
+                </div>
+                <br />
+            </div>
+            <div class="row masterBody">
+                <div class="col" style="height: auto">
+                    <br />
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <br />
+                </div>
+            </div>
+            <br />
+            <div class="row text-center masterFooter">
+
+                <div class="col">
+                    Logged in as :
+                    <asp:Label ID="lblUserFullName" Text="" ForeColor="#009933" runat="server"></asp:Label>&nbsp;&nbsp;&nbsp; Version Date : <span style="color: #009933"><%=VersionDate%></span>
+                    <br />
+                    <br />
+                    For website questions or technical support, contact us at <a href="mailto:supportcenter@ocfl.net">Service Center</a>
+                    <br />
+                    <br />
+                    Copyright © <%: DateTime.Now.Year %> Orange County Government, Florida - All rights reserved.   
+                       <br />
+                    &nbsp; 
+                    <asp:Label ID="loggedInUser" runat="server" Font-Size="XX-Small"></asp:Label>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

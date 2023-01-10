@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "bpICQZNFFiqU4p0en6DaUfHxI/RkHoXSCGQQ9a2sCPE=",
+  "Source": "SQL CRUD X HashiCorp Vault",
+  "BasePath": "_content/SQL CRUD X HashiCorp Vault",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

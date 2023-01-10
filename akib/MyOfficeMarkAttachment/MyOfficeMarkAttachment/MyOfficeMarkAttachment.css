@@ -1,0 +1,7 @@
+body{background-color:rgb(244, 245, 235);}
+fieldset{position: relative;margin:0px;padding:0px;background-color:#ffffff; margin-top:10px;padding-top:10px;margin-bottom:10px;padding-bottom:10px;}
+legend{position:absolute;top: -.5em;left: .5em;}
+.fieldSetDiv{width:700px; height:auto;}
+.tdText{text-align:right;}
+.space{margin:0px;padding-right:10px}
+.fieldsetHeading{color:#0371AB;font-weight:bold;}

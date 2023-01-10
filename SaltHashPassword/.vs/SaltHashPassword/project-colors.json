@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1e475562-9e3e-419a-abbd-fce611cac8bf": {
+      "ProjectGuid": "1e475562-9e3e-419a-abbd-fce611cac8bf",
+      "DisplayName": "SaltHashPassword",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
